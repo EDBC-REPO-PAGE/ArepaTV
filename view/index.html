@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <°./comp/meta.html°>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+
+	<body class="uk-background-secondary uk-height-expand uk-light">
+        
+        <!-------------------------------------------------------------------------------------------------->
+        
+        <div section hash="home">
+            <°./comp/main.html°>
+            <°./comp/planes.html°>
+            <°./comp/preguntas.html°>
+        </div>
+
+        <!-------------------------------------------------------------------------------------------------->
+
+        <div section hidden hash="dmca">
+            <°./comp/navbar.html°>
+            <°./comp/dmca.html°>
+        </div>
+
+        <!-------------------------------------------------------------------------------------------------->
+
+        <div section hidden hash="pricing">
+            <°./comp/navbar.html°>
+            <°./comp/pricing.html°>
+        </div>
+
+        <!-------------------------------------------------------------------------------------------------->
+
+        <div section hidden hash="privacy">
+            <°./comp/navbar.html°>
+            <°./comp/privacy.html°>
+        </div>
+
+        <!-------------------------------------------------------------------------------------------------->
+
+        <div section hidden hash="term">
+            <°./comp/navbar.html°>
+            <°./comp/term.html°>
+        </div>
+
+        <!-------------------------------------------------------------------------------------------------->
+
+        <div section hidden hash="reseller">
+            <°./comp/navbar.html°>
+            <°./comp/reseller.html°>
+        </div>
+
+        <!-------------------------------------------------------------------------------------------------->
+
+        <°./comp/footer.html°>
+
+        <!-------------------------------------------------------------------------------------------------->
+
+        <script>
+            device.query.observeField('hash',(a,b)=>{
+                device.focus.focus($('body'));
+            })
+        </script>
+
+    </body>
+
+</html>
